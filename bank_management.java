@@ -79,13 +79,13 @@ public class bank_management {
 		txtUserName.setColumns(10);
 		
 		JLabel lblUsername = new JLabel("USER NAME");
-		lblUsername.setForeground(Color.BLACK);
+		lblUsername.setForeground(Color.WHITE);
 		lblUsername.setBackground(Color.BLACK);
 		lblUsername.setBounds(85, 28, 170, 42);
 		frame.getContentPane().add(lblUsername);
 		
 		JLabel lblPassword = new JLabel("PASSWORD");
-		lblPassword.setForeground(Color.BLACK);
+		lblPassword.setForeground(Color.WHITE);
 		lblPassword.setBackground(Color.BLACK);
 		lblPassword.setBounds(85, 111, 95, 42);
 		frame.getContentPane().add(lblPassword);
@@ -116,6 +116,9 @@ public class bank_management {
 				if(response=="Sign In")
 				{
 					frame.dispose();
+					home_page hp=new home_page();
+					hp.setVisible(true);
+					//hp.setExtendedState(JFrame.MAXIMIZED_BOTH);
 					System.out.println("sign in being pressed");
 				}
 			}
@@ -124,8 +127,9 @@ public class bank_management {
 		frame.getContentPane().add(btnSignIn);
 		
 		JLabel lblBankmanagement = new JLabel("");
-		lblBankmanagement.setIcon(new ImageIcon("/home/vishnu/Downloads/Red Island [1920x1080]"));
-		lblBankmanagement.setBounds(0, -33, 450, 413);
+		lblBankmanagement.setForeground(Color.WHITE);
+		lblBankmanagement.setIcon(new ImageIcon("/home/vishnu/Desktop/gasd/src/gasd/05c9ace61b57c06f42eecbbd6dddd5a1 (copy).jpg"));
+		lblBankmanagement.setBounds(-26, -121, 557, 525);
 		frame.getContentPane().add(lblBankmanagement);
 	}
 }
