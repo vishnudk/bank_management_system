@@ -2,12 +2,18 @@ import java.io.Serializable;
 
 class Bank implements Serializable{
 
-    private String FirstName, LastName, FatherName, MotherName, HouseName,dob, Password;
+    private String FirstName, LastName, FatherName, MotherName, HouseName,dob, Password, Username;
 
-    Number phno;
+    Number phno, balance;
+
+    Bank()
+    {
 
 
-    public Bank(String firstname, String lastname, String fathername, String mothername, String houseName, String dob, Number phno){
+    }
+
+
+    public Bank(String firstname, String lastname, String fathername, String mothername, String houseName, String dob, Number phno, String password){
         this.FirstName = firstname;
         this.LastName = lastname;
         this.FatherName = fathername;
@@ -15,6 +21,7 @@ class Bank implements Serializable{
         this.HouseName = houseName;
         this.dob = dob;
         this.phno = phno;
+        this.Password = password;
     }
 
 
@@ -89,5 +96,34 @@ class Bank implements Serializable{
         this.Password = name;
     }
 
+    public String getPassword()
+    {
+        return Password;
+    }
+
+    public void setUsername(String name)
+    {
+        this.Username = name;
+    }
+
+    public String getUsername()
+    {
+        return Username;
+    }
+
+    public Number getbalance()
+    {
+        return balance;
+    }
+
+    public void setBalance(Number number)
+    {
+        this.balance = number;
+    }
+
+
+    public String toString() {
+        return "First Name:" + FirstName + "\nLast name " + LastName + "\nFather name: " +FatherName ;
+    }
 
 }
