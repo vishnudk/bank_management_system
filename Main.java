@@ -1,3 +1,5 @@
+/*package gasd;
+
 import java.io.*;
 
 public class Main {
@@ -9,7 +11,7 @@ public class Main {
       //  fs.StoreObj(B);
        // fs.displayObjects();
         //fs.search("BankFile.txt");
-        Bank p1 = new Bank("Vish", "DK", "D","K", "DK","20 May" ,99999,"iop");
+        Bank p1 = new Bank();
         //Bank p2 = new Bank("Vishn", "DK", "D","K", "DK","20 May" ,99999,"iopo");
 
         try {
@@ -30,7 +32,8 @@ public class Main {
             // Read objects
             Bank pr1 = (Bank) oi.readObject();
 
-
+while())
+{
             String s = pr1.getFirstName();
 
 
@@ -59,6 +62,4 @@ public class Main {
             e.printStackTrace();
         }
 
-    }
-    }
-
+        }}*/

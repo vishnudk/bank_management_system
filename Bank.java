@@ -1,19 +1,18 @@
+package gasd;
+
 import java.io.Serializable;
 
 class Bank implements Serializable{
 
-    private String FirstName, LastName, FatherName, MotherName, HouseName,dob, Password, Username;
+    private String FirstName, LastName, FatherName, MotherName, HouseName,dob, Password,Username,sex;
 
-    Number phno, balance;
+    String phno;
 
-    Bank()
-    {
-
-
-    }
-
-
-    public Bank(String firstname, String lastname, String fathername, String mothername, String houseName, String dob, Number phno, String password){
+Bank()
+{
+	
+}
+    public Bank(String firstname, String lastname, String fathername, String mothername, String houseName, String dob, String phno,String UserName,String sex){
         this.FirstName = firstname;
         this.LastName = lastname;
         this.FatherName = fathername;
@@ -21,7 +20,7 @@ class Bank implements Serializable{
         this.HouseName = houseName;
         this.dob = dob;
         this.phno = phno;
-        this.Password = password;
+        this.sex=sex;
     }
 
 
@@ -81,49 +80,40 @@ class Bank implements Serializable{
         return dob;
     }
 
-    public void setPhno(Number no)
+    public void setPhno(String no)
     {
         this.phno = no;
     }
 
-    public Number getPhno()
+    public String getPhno()
     {
         return phno;
     }
-
+public String getSex()
+{
+	return sex;
+}
     public void setPassword(String name)
     {
         this.Password = name;
     }
-
+    
     public String getPassword()
     {
-        return Password;
+    	return Password;
     }
-
-    public void setUsername(String name)
+    
+    public void setusername(String name)
     {
-        this.Username = name;
+    	this.Username = name;
     }
-
+    
     public String getUsername()
     {
-        return Username;
+    	return Username;
     }
+    
+    
 
-    public Number getbalance()
-    {
-        return balance;
-    }
-
-    public void setBalance(Number number)
-    {
-        this.balance = number;
-    }
-
-
-    public String toString() {
-        return "First Name:" + FirstName + "\nLast name " + LastName + "\nFather name: " +FatherName ;
-    }
 
 }

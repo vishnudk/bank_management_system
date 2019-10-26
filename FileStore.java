@@ -1,3 +1,5 @@
+package gasd;
+
 import java.io.*;
 
  class FileStore{
@@ -8,7 +10,6 @@ import java.io.*;
         try
         {
             ops = new FileOutputStream("BankFile.txt");
-
             objOutStr = new ObjectOutputStream(ops);
             objOutStr.writeObject(B);
             objOutStr.flush();
